@@ -26,6 +26,7 @@
 .res-container {
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .res-card {
@@ -39,10 +40,12 @@
     border: 1px solid black;
 }
 
-.search {
-    padding: 10px
+.filter-btn {
+    padding: 10px;
+    cursor: pointer;
 }
 
 .res-logo {
     width: 100%;
 }
+
