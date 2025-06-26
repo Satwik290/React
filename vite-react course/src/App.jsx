@@ -1,35 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div style={{background:"#dfe6e9",height:"100vh",}}>
+      <div style={{display:"flex",justifyContent:"center"}}>
+        <div>
+           <div><PostComponent /><br /> </div>
+           <div><PostComponent /><br /> </div>
+           <div><PostComponent /><br /> </div>
+       </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
+  
   )
+}
+//structuring the app into components
+//defining the state of application
+
+const style={width:200, backgroundColor:"white",bordercolor:"grey",borderWidth:1,padding:20}
+function PostComponent(){
+  return <div style={style}>
+    <div style={{display:"flex"}}>
+    <img src="" alt=""style={{
+      width:20,
+      height:20,
+      borderRadius:20
+    }} />
+    <div style={{fontSize:10,marginLeft:10}}>
+      <b>
+        satwik
+      </b>
+      <div>161 followers</div>
+      <div>11m</div>
+    </div>
+  </div>
+  <div style={{fontSize:12}}>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ab, nisi doloribus vel earum esse ex, cupiditate deleniti natus animi corrupti repellat quaerat ipsum mollitia, alias expedita minima numquam nesciunt?
+  </div>
+  </div>
+
 }
 
 export default App
